@@ -7,7 +7,7 @@ x = float(raw_bill)
 # what percentage tip do they want to give
 print '-' * 30
 tip_percentage = raw_input("What percentage (%) tip would you like to give: ")
-# converts number into percentage, divides by 100
+# converts number into percentage, divides input by 100
 y = float(tip_percentage) / 100
 
 # how many people are in the party?
