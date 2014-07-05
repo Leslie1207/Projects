@@ -1,4 +1,4 @@
 Projects
 ========
 
-Some stuff I've written. 
+Bits 'n bobs.
