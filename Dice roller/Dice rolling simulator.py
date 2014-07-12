@@ -7,6 +7,7 @@ print "Welcome to the Dice Rolling Simulator!\n"
 print "Press Enter to roll the dice."
 begin = raw_input("")
 
+""" function where random numbers are generated """
 def dice_roll():
 	while True:
 		print "You have rolled..."
@@ -16,7 +17,9 @@ def dice_roll():
 		break
 		
 	print "\n"
-	
+
+""" ask whether player wants to roll the dice again. will only accept yes or no. 
+	otherwise loops back. """
 def roll_dice_again():	
 	again = str(raw_input("Would you like to roll the dice again? 'Yes' or 'No'?\n").lower())
 		
