@@ -9,9 +9,10 @@ begin = raw_input("")
 
 def dice_roll():
 	while True:
-		print "You have rolled a..."
-		dice_number = random.randint(1,6)
-		print dice_number
+		print "You have rolled..."
+		print random.randint(1,6)
+		print "and"
+		print random.randint(1,6)
 		break
 		
 	print "\n"
