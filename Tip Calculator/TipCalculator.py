@@ -23,4 +23,4 @@ def calculate_bill():
     total_bill = (x + (x * y))/z
     return round(total_bill, 2)
 
-print "Each person owes: GBP", calculate_bill()
+print "Each person owes: GBP",calculate_bill()
