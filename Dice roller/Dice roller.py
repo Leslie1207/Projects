@@ -1,5 +1,5 @@
 @@ -1,53 +0,0 @@
-""" Dice rolling simulator, will ask user to press Enter to roll.
+""" Hello! Dice rolling simulator, will ask user to press Enter to roll.
 	Will print a random number between 1 to 6. Will ask user if they want to roll again. """
 
 import random
@@ -23,7 +23,7 @@ def dice_roll():
     print "\n"
 
 
-""" ask whether player wants to roll the dice again. will only accept yes or no. 
+""" ask whether player wants to roll the dice again. will only accept yes or no.
 	otherwise loops back. """
 
 
@@ -49,6 +49,3 @@ def roll_dice_again():
 
 dice_roll()
 roll_dice_again()
-
-
-
