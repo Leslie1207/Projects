@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 import time
 import os
@@ -8,10 +9,14 @@ dob = os.environ.get("VEVO_DOB")
 passportnumber = os.environ.get("VEVO_PPT")
 email = os.environ.get("VEVO_EMAIL")
 visagrantnumber = os.environ.get("VEVO_GRANT")
+chromedriver = os.environ.get("CHROME_DRIVER")
 
-chromedriver = (
-    "C:\\Users\\lesli\\AppData\\Local\\Programs\\Python\\Python38-32\\Lib\\site-packages\\selenium\\webdriver\\chrome\\chromedriver.exe")
-driver = webdriver.Chrome(executable_path=chromedriver)
+# Instantiate a chrome options object to set size and headless preference
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--window-size=1920x1080")
+
+driver = webdriver.Chrome(options=chrome_options, executable_path=chromedriver)
 # Telling Chrome to open Immi website.
 driver.get("https://online.immi.gov.au/evo/firstParty?actionType=query")
 
