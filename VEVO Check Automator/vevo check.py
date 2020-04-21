@@ -15,7 +15,7 @@ chromedriver = os.environ.get("CHROME_DRIVER")
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=1920x1080")
-
+# Set driver to run based on args added
 driver = webdriver.Chrome(options=chrome_options, executable_path=chromedriver)
 # Telling Chrome to open Immi website.
 driver.get("https://online.immi.gov.au/evo/firstParty?actionType=query")
@@ -33,7 +33,7 @@ time.sleep(2)
 # Select Visa Grant Number
 referencetype.select_by_visible_text("Visa Grant Number")
 
-# Wait for 5 secs, gives next dropdown chance to open
+# Wait for 2 secs, gives next dropdown chance to open
 time.sleep(2)
 
 # Find Visa Grant Number box
